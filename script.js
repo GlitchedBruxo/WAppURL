@@ -13,7 +13,6 @@ function gerarLink() {
     var numero = document.getElementById("numero").value;
     var mensagemCheckbox = document.getElementById("mensagemCheckbox").checked;
     var mensagemTexto = document.getElementById("mensagemTexto").value;
-
     var link = "https://wa.me/" + ddd + numero;
     
     if (mensagemCheckbox && mensagemTexto.trim() !== "") {
