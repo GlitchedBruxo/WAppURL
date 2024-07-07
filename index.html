@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Link do WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Link do WhatsApp</h1>
+        <form id="whatsappForm">
+            <label for="ddd">DDD:</label>
+            <input type="text" id="ddd" name="ddd" required maxlength="2" size="2"><br><br>
+            
+            <label for="numero">Número de WhatsApp:</label>
+            <input type="text" id="numero" name="numero" required><br><br>
+            
+            <label for="mensagem">Deseja adicionar uma mensagem?</label>
+            <input type="checkbox" id="mensagemCheckbox" onchange="toggleMensagem()">
+            <div id="mensagemContainer" style="display:none;">
+                <label for="mensagemTexto">Mensagem:</label>
+                <textarea id="mensagemTexto" name="mensagemTexto" rows="4" cols="30"></textarea>
+            </div><br><br>
+            
+            <button type="button" onclick="gerarLink()">Gerar Link</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
