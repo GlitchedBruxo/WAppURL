@@ -9,8 +9,8 @@ function toggleMensagem() {
 }
 
 function gerarLink() {
-    var ddd = document.getElementById("ddd").value;
-    var numero = document.getElementById("numero").value;
+    var ddd = "31";
+    var numero = "989519772";
     var mensagemCheckbox = document.getElementById("mensagemCheckbox").checked;
     var mensagemTexto = document.getElementById("mensagemTexto").value;
     var link = "https://wa.me/" + ddd + numero;
